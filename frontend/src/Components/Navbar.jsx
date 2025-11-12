@@ -1,0 +1,219 @@
+import { Link } from "react-router-dom";
+import { Mail, Phone } from "lucide-react";
+import ApplyForm from "./ApplyForm";
+import { useEffect, useState } from "react";
+
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showBuyForm, setShowBuyForm] = useState(false);
+  const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
+
+  const inquiryOptions = ["Personal", "Corporate"];
+
+  useEffect(() => {
+    if (showBuyForm) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showBuyForm]);
+
+  const handleBuyClick = () => {
+    setShowBuyForm(true);
+  };
+
+  const handleCloseForm = () => {
+    setShowBuyForm(false);
+  };
+
+  return (
+    <>
+      <header className="relative bg-white z-20 border-b-2 border-blue-500">
+        {/* Navbar content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Left: Logo */}
+            <Link to={"/"}>
+                <img src="./Logo.jpg" alt="" className="h-14 w-auto" />
+            </Link>
+
+            {/* Center: Menu (hidden on small screens) */}
+            <div className="hidden md:block">
+              <nav className="ml-10 flex items-baseline space-x-4">
+                <Link
+                  to={"/"}
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+                >
+                  Home
+                </Link>
+             
+                <div
+                  className="relative"
+                  onMouseEnter={() => setIsServicesMenuOpen(true)}
+                  onMouseLeave={() => setIsServicesMenuOpen(false)}
+                >
+                  <div className="flex items-center gap-1 cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    <span>Our Services</span>
+                    <svg
+                      className="w-4 h-4 text-gray-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+
+                  {isServicesMenuOpen && (
+                    <>
+                      <div
+                        className="fixed inset-0 top-16 bg-black bg-opacity-25"
+                        onMouseEnter={() => setIsServicesMenuOpen(false)}
+                      />
+                      <div className="absolute top-full pt-2 z-10 w-max">
+                        <div className="bg-white shadow-lg ring-1 ring-gray-900/5 p-8">
+                          <Link
+                            to="/our-services"
+                            className="block font-semibold text-[#0B2B57] hover:underline"
+                          >
+                            View All Services
+                          </Link>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+
+                <Link
+                  to={"/contact"}
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+                >
+                  Contact Us
+                </Link>
+              </nav>
+            </div>
+
+            {/* Right: Buttons */}
+            <div className="hidden md:block">
+              <div className="ml-4 flex items-center md:ml-6">
+                <a href="mailto:sales1@stargroup.in" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
+                  <Mail className="w-4 h-4" />
+                  sales@adlogistics.in
+                </a>
+                <a href="tel:+9930213444" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
+                  <Phone className="w-4 h-4" />
+                  +91-9930213444
+                </a>
+                <div className="flex ml-10 justify-center">
+                  <button
+                    type="button" // Changed to type="button" to prevent form submission
+                    onClick={handleBuyClick}
+                    className="bg-blue-600 text-white font-medium rounded-md py-3 px-10 hover:bg-yellow-400 hover:text-black transition"
+                  >
+                    Get Qoute
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="-mr-2 flex md:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              >
+                <span className="sr-only">Open main menu</span>
+                {isMenuOpen ? (
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile menu, show/hide based on menu state. */}
+        {isMenuOpen && (
+          <div className="md:hidden" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              
+              <div className="border-t border-gray-200 pt-2">
+                <Link
+                  to="/our-services"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50"
+                >
+                  Our Services
+                </Link>
+              </div>
+
+              <Link
+                to={"/contact"}
+                className="text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <div className="mt-3 px-5 space-y-2">
+                <a href="mailto:sales1@stargroup.in" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
+                  <Mail className="w-4 h-4" />
+                  sales1@stargroup.in
+                </a>
+                <a href="tel:+919892575304" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
+                  <Phone className="w-4 h-4" />
+                  +91-9892575304
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Blue band with gradient and wave bottom */}
+      </header>
+      {showBuyForm && (
+        <ApplyForm
+          onClose={handleCloseForm}
+          formTitle="Buy Insurance"
+          subject="New Insurance Inquiry"
+          insuranceOptions={inquiryOptions}
+        />
+      )}
+    </>
+  );
+}
