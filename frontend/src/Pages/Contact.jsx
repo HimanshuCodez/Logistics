@@ -15,7 +15,7 @@ const ContactUs = () => {
         transition={{ duration: 0.6 }}
         className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-4 sm:mb-6 text-center leading-tight"
       >
-        Contact <span className="text-blue-600">SmrFinserv</span>
+        Contact <span className="text-blue-600">A.D. Logistics</span>
       </motion.h1>
 
       <motion.p
@@ -24,9 +24,7 @@ const ContactUs = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="text-gray-600 text-center max-w-2xl mb-8 sm:mb-10 px-2 text-sm sm:text-base"
       >
-        We’re here to help you with all your insurance needs — whether it’s
-        health, motor, or life insurance. Reach out anytime and we’ll get back
-        to you as soon as possible.
+        We’re here to help you with all your logistics and shipping needs. Reach out anytime and we’ll get back to you as soon as possible.
       </motion.p>
 
       {/* Contact Card */}
@@ -53,7 +51,7 @@ const ContactUs = () => {
 
             <div className="flex items-center gap-3">
               <Mail className="text-blue-600 w-5 h-5 flex-shrink-0" />
-              <p className="break-all">support@smrfinserv.com</p>
+              <p className="break-all">info@adlogistics.com</p>
             </div>
 
             <div className="flex items-start gap-3">
@@ -61,12 +59,11 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <p>
                   <span className="font-medium text-blue-700">Address 1:</span>{" "}
-                  A-304, Raj Hans Kutumb, Ahinsa Khand -1, Indirapuram,
-                  Ghaziabad, Uttar Pradesh 201014
+                  123 Logistics Park, Suite 400, Global City, GC 12345
                 </p>
                 <p>
                   <span className="font-medium text-blue-700">Address 2:</span>{" "}
-                  195-A, Nyay Khand -1, Ghaziabad, Uttar Pradesh 201014
+                  456 Cargo Hub, Unit 10, Portside District, PD 67890
                 </p>
               </div>
             </div>
@@ -101,7 +98,7 @@ const ContactUs = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-3 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1 text-sm sm:text-base"
+              className="w-full px-4 py-3 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-500 mt-1 text-sm sm:text-base"
             />
           </div>
 
@@ -135,7 +132,7 @@ const ContactUs = () => {
         transition={{ delay: 0.8 }}
         className="mt-10 text-gray-500 text-xs sm:text-sm text-center px-3"
       >
-        © {new Date().getFullYear()} SmrFinserv — All Rights Reserved
+        © {new Date().getFullYear()} A.D. Logistics — All Rights Reserved
       </motion.p>
     </div>
     </>

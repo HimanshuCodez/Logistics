@@ -1,4 +1,5 @@
-export default function Example() {
+import { Globe, PackageSearch, ShieldCheck } from 'lucide-react';
+export default function Page() {
     return (
         <>
             <style>{`
@@ -8,48 +9,47 @@ export default function Example() {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-            <h1 className="text-3xl font-semibold text-center mx-auto">About our apps</h1>
+            <h1 className="text-3xl font-semibold text-center mx-auto">Why Choose AD Logistics?</h1>
             <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
-                A visual collection of our most recent works - each piece crafted with intention, emotion and style.
+                At AD Logistics, we are committed to delivering unparalleled logistics solutions, ensuring your cargo reaches its destination safely, efficiently, and on time.
             </p>
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
                 <div className="size-[520px] rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]"></div>
-                <img className="max-w-sm w-full rounded-xl h-auto"
-                    src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop"
-                    alt="" />
+                <img className="max-w-lg w-full rounded-xl h-auto"
+                    src="https://imgs.search.brave.com/oZgqvcgtgyMfoR5WNGcGzRQHdBLrJKzBtvkZd6CbM78/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbnRl/cm5hdGlvbmFsLWxv/Z2lzdGljcy1jb25j/ZXB0dWFsLWltYWdl/LWZlYXR1cmluZy1k/b2NrZXItbG9va2lu/Zy11bmxvYWRpbmct/Y29udGFpbmVyLXNo/aXAtaHVnZS1jcmFu/ZXMtMzExMzY2MDcu/anBn"
+                    alt="Logistics warehouse" />
                 <div>
-                    <h1 className="text-3xl font-semibold">Our Latest features</h1>
+                    <h1 className="text-3xl font-semibold">Our Commitment to Excellence</h1>
                     <p className="text-sm text-slate-500 mt-2">
-                        Ship Beautiful Frontends Without the Overhead — Customizable, Scalable and Developer-Friendly UI
-                        Components.
+                        We pride ourselves on a foundation of reliability, innovation, and customer-centric services, making us your ideal logistics partner.
                     </p>
             
                     <div className="flex flex-col gap-10 mt-6">
                         <div className="flex items-center gap-4">
-                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
-                                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/flashEmoji.png" alt="" />
+                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded flex items-center justify-center">
+                                <Globe size={24} className="text-indigo-600" />
                             </div>
                             <div>
-                                <h3 className="text-base font-medium text-slate-600">Lightning-Fast Performance</h3>
-                                <p className="text-sm text-slate-500">Built with speed — minimal load times and optimized.</p>
+                                <h3 className="text-base font-medium text-slate-600">Global Reach & Local Expertise</h3>
+                                <p className="text-sm text-slate-500">Leveraging an extensive network, we provide seamless logistics solutions across continents with deep local insights.</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
-                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
-                                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/colorsEmoji.png" alt="" />
+                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded flex items-center justify-center">
+                                <PackageSearch size={24} className="text-indigo-600" />
                             </div>
                             <div>
-                                <h3 className="text-base font-medium text-slate-600">Beautifully Designed Components</h3>
-                                <p className="text-sm text-slate-500">Modern, pixel-perfect UI components ready for any project.</p>
+                                <h3 className="text-base font-medium text-slate-600">Advanced Tracking & Transparency</h3>
+                                <p className="text-sm text-slate-500">Stay informed with real-time tracking and transparent updates on your shipments from origin to destination.</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
-                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
-                                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/puzzelEmoji.png" alt="" />
+                            <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded flex items-center justify-center">
+                                <ShieldCheck size={24} className="text-indigo-600" />
                             </div>
                             <div>
-                                <h3 className="text-base font-medium text-slate-600">Plug-and-Play Integration</h3>
-                                <p className="text-sm text-slate-500">Simple setup with support for React, Next.js and Tailwind css.</p>
+                                <h3 className="text-base font-medium text-slate-600">Reliable & Secure Deliveries</h3>
+                                <p className="text-sm text-slate-500">Your cargo's safety is our priority. We ensure secure handling and timely delivery with utmost care.</p>
                             </div>
                         </div>
                     </div>

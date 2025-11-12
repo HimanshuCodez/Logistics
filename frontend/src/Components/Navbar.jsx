@@ -114,7 +114,7 @@ export default function Navbar() {
                 <div className="flex ml-10 justify-center">
                   <button
                     type="button" // Changed to type="button" to prevent form submission
-                    onClick={handleBuyClick}
+                    
                     className="bg-blue-600 text-white font-medium rounded-md py-3 px-10 hover:bg-yellow-400 hover:text-black transition"
                   >
                     Get Qoute

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function ContactBanner() {
   return (
     <div className="w-full flex justify-center bg-red-700 py-10">
-      <div className="bg-red-600 rounded-2xl shadow-lg px-10 py-8 text-center text-white flex flex-col items-center gap-4 w-[90%] md:w-[70%]">
+      <div className="bg-red-600 rounded-2xl shadow-lg px-4 sm:px-10 py-8 text-center text-white flex flex-col items-center gap-4 w-[90%] md:w-[70%]">
         {/* Top Row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
           <div className="flex flex-col items-center">
@@ -15,7 +15,7 @@ export default function ContactBanner() {
 
           {/* Bouncing Number */}
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wider flex items-baseline"
+            className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-wider flex items-baseline"
             animate={{
               y: [0, -10, 0],
             }}
@@ -27,7 +27,7 @@ export default function ContactBanner() {
           >
             99&nbsp;3021&nbsp;34&nbsp;
             <motion.span
-              className="text-3xl sm:text-4xl md:text-6xl"
+              className="text-2xl sm:text-4xl md:text-6xl"
               animate={{
                 scale: [1, 1.2, 1],
                 color: ["#fff", "#ffeb3b", "#fff"],

@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award, Users, Building2, Factory, Trophy, Globe } from 'lucide-react';
+import { Award, Users, Ship, Truck, Trophy, Globe } from 'lucide-react';
 
 /*
-  StatsShowcase.jsx
-  - Animated statistics component using Tailwind CSS + Framer Motion
+  Plane.jsx
+  - Animated statistics component for a logistics company using Tailwind CSS + Framer Motion
   - Numbers count up smoothly when component mounts
   - Replace icons or adjust colors as you wish
 */
 
 const statsData = [
   { icon: Globe, label: 'Years of Experience', value: 25, suffix: '+', color: 'text-pink-600' },
-  { icon: Users, label: 'Expert Team', value: 30, suffix: '+', color: 'text-pink-600' },
-  { icon: Building2, label: 'Industries Catered', value: 50, suffix: '+', color: 'text-pink-600' },
-  { icon: Trophy, label: 'Awards Received', value: 10, suffix: '+', color: 'text-pink-600' },
-  { icon: Award, label: 'Satisfied Clients', value: 750, suffix: '+', color: 'text-pink-600' },
-  { icon: Factory, label: 'Locations', value: 2, suffix: '', color: 'text-pink-600' },
+  { icon: Users, label: 'Logistics Experts', value: 300, suffix: '+', color: 'text-pink-600' },
+  { icon: Ship, label: 'Countries Covered', value: 120, suffix: '+', color: 'text-pink-600' },
+  { icon: Trophy, label: 'Tons of Goods Moved', value: 1500, suffix: 'K+', color: 'text-pink-600' },
+  { icon: Award, label: 'Satisfied Clients', value: 1200, suffix: '+', color: 'text-pink-600' },
+  { icon: Truck, label: 'Fleets', value: 500, suffix: '+', color: 'text-pink-600' },
 ];
 
 const StatCard = ({ icon: Icon, label, value, suffix, color }) => {
@@ -56,13 +56,13 @@ const StatCard = ({ icon: Icon, label, value, suffix, color }) => {
   );
 };
 
-const StatsShowcase = () => {
+const Plane = () => {
   return (
     <section className="bg-[#f9aeaf]/20 py-16 px-6">
       <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Achievements</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Global Reach and Achievements</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Over the years, our dedication and expertise have helped us grow globally and earn the trust of thousands of clients.
+          Our commitment to excellence has propelled us to the forefront of the logistics industry, delivering satisfaction and success to clients worldwide.
         </p>
       </div>
 
@@ -75,4 +75,4 @@ const StatsShowcase = () => {
   );
 };
 
-export default StatsShowcase;
+export default Plane;
