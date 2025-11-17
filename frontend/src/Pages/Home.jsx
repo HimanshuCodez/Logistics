@@ -11,24 +11,29 @@ import Example from "../Components/Page";
 import ContactBanner from "../Components/ContactBanner";
 import CustomerMarquee from "../Components/CustomerMarquee";
 import AboutADLogistics from "../Components/AboutADLogistics";
+import ITCapabilities from "../Components/It";
+import FreightForwardingHighlights from "../Components/FreightForwardingHighlights";
+import CustomConsultancy from "../Components/Custom";
 
 const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <Navbar />
       <HeroSection />
       <AboutADLogistics />
       <Services />
 
       <AboutUs />
-
+      <CustomConsultancy/>
       <Example />
-      <StatsShowcase />
-      <ContactBanner />
 
-      <CustomerMarquee />
+      <StatsShowcase />
+      <FreightForwardingHighlights/>
+      <ContactBanner />
+<ITCapabilities/>
+      {/* <CustomerMarquee /> */}
 
       <Faq />
 

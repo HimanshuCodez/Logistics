@@ -9,7 +9,7 @@ export default function Page() {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-            <h1 className="text-3xl font-semibold text-center mx-auto">Why Choose AD Logistics?</h1>
+            <h1 className="text-3xl mt-5 font-semibold text-center mx-auto">Why Choose AD Logistics?</h1>
             <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
                 At AD Logistics, we are committed to delivering unparalleled logistics solutions, ensuring your cargo reaches its destination safely, efficiently, and on time.
             </p>

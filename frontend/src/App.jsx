@@ -6,6 +6,7 @@ import Personal from './Pages/Personal';
 import Corporate from './Pages/Corporate';
 import ContactUs from "./Pages/Contact";
 import OurServicesPage from './Components/OurServicesPage';
+import FreightForwardingHighlights from "./Components/FreightForwardingHighlights";
 
 import SocialHandles from "./Components/SocialHandles";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
      
         <Route path="/our-services" element={<OurServicesPage />} />
+ 
       </Routes>
     </Router>
   );
