@@ -14,6 +14,15 @@ import AboutADLogistics from "../Components/AboutADLogistics";
 import ITCapabilities from "../Components/It";
 import FreightForwardingHighlights from "../Components/FreightForwardingHighlights";
 import CustomConsultancy from "../Components/Custom";
+import LogisticsFolioLogisticsServices from "../Components/Service";
+import WhyADLogistics from "../Components/Clearnace";
+import CustomClearanceHighlights from "../Components/CustomClearanceHighlights";
+import FreightForwardingHighlightss from "../Components/FreightForwardingHighlightss";
+import WhyADLogisticsConsultancy from "../Components/WhyCustom";
+import WhyADLogisticsSurfaceTransportation from "../Components/Surface";
+import SurfaceTransportationHighlights from "../Components/SurfaceHighlights";
+import MissionVisionValues from "../Components/Mission";
+import OurExperience from "../Components/Capability";
 
 const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
@@ -22,17 +31,28 @@ const Home = () => {
     <div className="">
       <Navbar />
       <HeroSection />
-      <AboutADLogistics />
       <Services />
+      <AboutADLogistics />
+<LogisticsFolioLogisticsServices/>
+<WhyADLogistics/>
+<CustomClearanceHighlights/>/
+
+      <FreightForwardingHighlights/>
+      <FreightForwardingHighlightss/>
+      <WhyADLogisticsConsultancy/>
+      <CustomConsultancy/>
+      <WhyADLogisticsSurfaceTransportation/>
+      <SurfaceTransportationHighlights/>
+      <MissionVisionValues/>
+<ITCapabilities/>
+<OurExperience/>
+      
 
       <AboutUs />
-      <CustomConsultancy/>
       <Example />
 
       <StatsShowcase />
-      <FreightForwardingHighlights/>
       <ContactBanner />
-<ITCapabilities/>
       {/* <CustomerMarquee /> */}
 
       <Faq />
