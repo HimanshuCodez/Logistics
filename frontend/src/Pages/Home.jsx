@@ -27,6 +27,9 @@ import EnquiryForm from "../Components/EnquiryForm";
 import CustomsClearanceDocs from "../Components/Expport";
 import CustomsImportDocs from "../Components/Import";
 import ImportDocsComponent from "../Components/Docs";
+import SeaAir from "../Components/SeaAir";
+import SeaFreightForwarder from "../Components/Fright";
+import WarehouseService from "../Components/WarehouseService";
 
 const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
@@ -35,11 +38,14 @@ const Home = () => {
     <div className="">
       <Navbar />
       <HeroSection />
+      <SeaAir/>
+      <SeaFreightForwarder/>
+      <WarehouseService/>
       <Services />
       <AboutADLogistics />
 <LogisticsFolioLogisticsServices/>
 <WhyADLogistics/>
-<CustomClearanceHighlights/>/
+<CustomClearanceHighlights/>
 
       <FreightForwardingHighlights/>
       <FreightForwardingHighlightss/>
@@ -50,7 +56,7 @@ const Home = () => {
       <MissionVisionValues/>
 <ITCapabilities/>
 <OurExperience/>
-
+<ImportDocsComponent/>
 <CustomsImportDocs/>
 <CustomsClearanceDocs/>
       <EnquiryForm/>

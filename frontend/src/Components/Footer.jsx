@@ -55,8 +55,7 @@ const Footer = () => {
                 <h4 className="font-semibold mb-2">Our Office</h4>
                 <ul className="space-y-1 text-blue-300">
                   <li>
-                    Office No:-26,Ground Floor,Citi Tower
-                    Plot no:-55,Sec-15, CBD Belapur, Navi Mumbai-400614
+                   Office number 412 A wings Citi tower sector 15 CBD Belapur Navi Mumbai Maharashtra 400614
                   </li>
                 </ul>
               </div>
@@ -69,7 +68,7 @@ const Footer = () => {
                     className="flex items-center hover:text-yellow-400"
                   >
                     <Phone size={16} className="mr-2" />
-                    9930213444
+                    9930213444, 9987444773
                   </a>
                   <a
                     href="mailto:sales@adlogistics.co.in"
