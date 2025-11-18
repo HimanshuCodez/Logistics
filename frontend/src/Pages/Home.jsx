@@ -30,6 +30,8 @@ import ImportDocsComponent from "../Components/Docs";
 import SeaAir from "../Components/SeaAir";
 import SeaFreightForwarder from "../Components/Fright";
 import WarehouseService from "../Components/WarehouseService";
+import CustomsClearanceSteps from "../Components/Steps";
+
 
 const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
@@ -41,6 +43,7 @@ const Home = () => {
       <SeaAir/>
       <SeaFreightForwarder/>
       <WarehouseService/>
+      <CustomsClearanceSteps/>
       <Services />
       <AboutADLogistics />
 <LogisticsFolioLogisticsServices/>
@@ -59,7 +62,9 @@ const Home = () => {
 <ImportDocsComponent/>
 <CustomsImportDocs/>
 <CustomsClearanceDocs/>
+
       <EnquiryForm/>
+
 
       <AboutUs />
       <Example />
