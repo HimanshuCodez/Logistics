@@ -58,13 +58,10 @@ const ContactUs = () => {
               <MapPin className="text-blue-600 w-5 h-5 flex-shrink-0 mt-1" />
               <div className="space-y-2">
                 <p>
-                  <span className="font-medium text-blue-700">Address 1:</span>{" "}
-                  123 Logistics Park, Suite 400, Global City, GC 12345
+                  <span className="font-medium text-blue-700">Address :</span>{" "}
+                  Office number 412 A wings Citi tower sector 15 CBD Belapur Navi Mumbai Maharashtra 400614
                 </p>
-                <p>
-                  <span className="font-medium text-blue-700">Address 2:</span>{" "}
-                  456 Cargo Hub, Unit 10, Portside District, PD 67890
-                </p>
+               
               </div>
             </div>
           </div>
