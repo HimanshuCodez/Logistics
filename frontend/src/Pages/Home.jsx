@@ -23,6 +23,10 @@ import WhyADLogisticsSurfaceTransportation from "../Components/Surface";
 import SurfaceTransportationHighlights from "../Components/SurfaceHighlights";
 import MissionVisionValues from "../Components/Mission";
 import OurExperience from "../Components/Capability";
+import EnquiryForm from "../Components/EnquiryForm";
+import CustomsClearanceDocs from "../Components/Expport";
+import CustomsImportDocs from "../Components/Import";
+import ImportDocsComponent from "../Components/Docs";
 
 const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
@@ -46,7 +50,10 @@ const Home = () => {
       <MissionVisionValues/>
 <ITCapabilities/>
 <OurExperience/>
-      
+
+<CustomsImportDocs/>
+<CustomsClearanceDocs/>
+      <EnquiryForm/>
 
       <AboutUs />
       <Example />
