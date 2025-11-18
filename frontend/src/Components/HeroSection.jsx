@@ -64,7 +64,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg sm:text-xl max-w-2xl mx-auto"
             >
-              Welcome to AD Logistics - The Best Company for your needs.
+              Custom Clearance
             </motion.p>
           </div>
         </div>
