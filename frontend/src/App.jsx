@@ -2,13 +2,10 @@ import React from "react";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import InsuranceLanding from './Pages/Home';
-import Personal from './Pages/Personal';
-import Corporate from './Pages/Corporate';
+
 import ContactUs from "./Pages/Contact";
 import OurServicesPage from './Components/OurServicesPage';
-import FreightForwardingHighlights from "./Components/FreightForwardingHighlights";
 
-import SocialHandles from "./Components/SocialHandles";
 
 function App() {
 

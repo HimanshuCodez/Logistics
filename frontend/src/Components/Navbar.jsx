@@ -111,11 +111,11 @@ export default function Navbar() {
                   <Phone className="w-4 h-4" />
                   +91-9930213444
                 </a>
-                <div className="flex ml-10 justify-center">
+                <div className="flex justify-center">
                   <button
                     type="button" // Changed to type="button" to prevent form submission
                     
-                    className="bg-blue-600 text-white font-medium rounded-md py-3 px-10 hover:bg-yellow-400 hover:text-black transition"
+                    className="ml-3 bg-blue-600 text-white font-medium rounded-md py-3 px-10 hover:bg-yellow-400 hover:text-black transition"
                   >
                     Get Qoute
                   </button>
