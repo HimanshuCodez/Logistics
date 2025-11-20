@@ -37,7 +37,7 @@ const Home = () => {
   // Removed showApplyForm state and handleCloseApplyForm function as ApplyForm will be always visible
 
   return (
-    <div className="">
+    <div className="w-full">
       <Navbar />
       <HeroSection />
       <SeaAir/>
@@ -50,7 +50,7 @@ const Home = () => {
 <WhyADLogistics/>
 <CustomClearanceHighlights/>
 
-      <FreightForwardingHighlights/>
+     
       <FreightForwardingHighlightss/>
       <WhyADLogisticsConsultancy/>
       <CustomConsultancy/>
@@ -59,7 +59,7 @@ const Home = () => {
       <MissionVisionValues/>
 <ITCapabilities/>
 <OurExperience/>
-<ImportDocsComponent/>
+
 <CustomsImportDocs/>
 <CustomsClearanceDocs/>
 
