@@ -39,18 +39,19 @@ const Home = () => {
       <Suspense fallback={<Spinner/>}>
         <Navbar />
         <HeroSection />
-        <SeaAir />
-        <SeaFreightForwarder />
+        <AboutADLogistics />
+        {/* <SeaAir />
+        <SeaFreightForwarder /> */}
+        <Services />
+        <WhyADLogistics />
         <WarehouseService />
         <CustomsClearanceSteps />
-        <Services />
-        <AboutADLogistics />
         <LogisticsFolioLogisticsServices />
-        <WhyADLogistics />
         <CustomClearanceHighlights />
         <FreightForwardingHighlightss />
         <WhyADLogisticsConsultancy />
         <CustomConsultancy />
+        <EnquiryForm />
         <WhyADLogisticsSurfaceTransportation />
         <SurfaceTransportationHighlights />
         <MissionVisionValues />
@@ -58,7 +59,6 @@ const Home = () => {
         <OurExperience />
         <CustomsImportDocs />
         <CustomsClearanceDocs />
-        <EnquiryForm />
         <AboutUs />
         <Example />
         <StatsShowcase />

@@ -105,7 +105,7 @@ export default function Navbar() {
               <div className="ml-4 flex items-center md:ml-6">
                 <a href="mailto:sales1@stargroup.in" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
                   <Mail className="w-4 h-4" />
-                  sales@adlogistics.in
+                  sales@adlogistics.co.in
                 </a>
                 <a href="tel:+9930213444" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
                   <Phone className="w-4 h-4" />
@@ -117,7 +117,7 @@ export default function Navbar() {
                     
                     className="ml-3 bg-blue-600 text-white font-medium rounded-md py-3 px-10 hover:bg-yellow-400 hover:text-black transition"
                   >
-                    Get Qoute
+                    Get Quote
                   </button>
                 </div>
               </div>
