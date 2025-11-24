@@ -62,7 +62,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-2xl sm:text-2xl max-w-2xl mx-auto"
+              className="text-3xl sm:text-3xl max-w-2xl mx-auto"
             >
               Custom Clearance
             </motion.p>
