@@ -111,12 +111,7 @@ export default function WhyADLogistics() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-center mt-20"
           >
-            <div className="inline-block bg-blue-500 text-white px-12 py-8 rounded-3xl shadow-2xl">
-              <p className="text-2xl font-bold flex items-center gap-4">
-                <Shield className="w-10 h-10" />
-                Your Trusted Customs Clearance Partner in India
-              </p>
-            </div>
+         
           </motion.div>
         </div>
       </section>
