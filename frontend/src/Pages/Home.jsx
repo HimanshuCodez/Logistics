@@ -51,7 +51,7 @@ const Home = () => {
         <EnquiryForm />
         <CustomClearanceHighlights />
       
-        <WhyADLogisticsSurfaceTransportation />
+        {/* <WhyADLogisticsSurfaceTransportation /> */}
         {/* <WhyADLogisticsConsultancy /> */}
         <Example />
         <CustomConsultancy />
