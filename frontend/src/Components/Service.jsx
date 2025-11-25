@@ -90,34 +90,35 @@ export default function LogisticsFolioLogisticsServices() {
                   key={index}
                   variants={itemVariants}
                   whileHover={{ 
-                    y: -10,
-                    transition: { duration: 0.3 }
+                    y: -12,
+                    scale: 1.03,
+                    boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.25)",
+                    transition: { duration: 0.4, ease: "easeOut" }
                   }}
-                  className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
+                  className="group relative bg-white rounded-2xl shadow-lg transition-all duration-500 overflow-hidden border border-gray-100 cursor-pointer"
                 >
                   {/* Gradient Overlay on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                   
-                  <div className="p-8 md:p-10">
+                  <div className="relative p-8 md:p-10">
                     <div className="flex items-center gap-5 mb-6">
-                      <div className="p-4 bg-blue-500 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-10 h-10 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-black">
+                      <motion.div 
+                        className="p-4 bg-blue-500 rounded-xl transition-colors duration-400 group-hover:bg-white"
+                        whileHover={{ scale: 1.1 }}
+                      >
+                        <Icon className="w-10 h-10 text-white transition-colors duration-400 group-hover:text-blue-600" />
+                      </motion.div>
+                      <h3 className="text-2xl font-bold text-black transition-colors duration-400 group-hover:text-white">
                         {service.title}
                       </h3>
                     </div>
                     
-                    <p className="text-gray-700 leading-relaxed text-base">
+                    <p className="text-gray-700 leading-relaxed text-base transition-colors duration-400 group-hover:text-blue-100">
                       {service.description}
                     </p>
 
                     {/* Bottom Accent Line */}
-                    <motion.div 
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "100px" }}
-                      transition={{ duration: 0.8, delay: 0.5 }}
-                      className="h-1 bg-blue-500 mt-8 rounded-full"
+                    <div className="h-1 bg-blue-500 mt-8 rounded-full transition-all duration-400 group-hover:bg-white w-16 group-hover:w-24"
                     />
                   </div>
                 </motion.div>
@@ -130,7 +131,6 @@ export default function LogisticsFolioLogisticsServices() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-          
             className="text-center mt-20"
           >
             <div className="inline-flex items-center gap-4 bg-blue-500 text-white px-10 py-6 rounded-full shadow-2xl">

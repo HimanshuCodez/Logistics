@@ -51,7 +51,7 @@ const ContactUs = () => {
 
             <div className="flex items-center gap-3">
               <Mail className="text-blue-600 w-5 h-5 flex-shrink-0" />
-              <p className="break-all">info@adlogistics.com</p>
+              <p className="break-all">info@adlogistics.co.in</p>
             </div>
 
             <div className="flex items-start gap-3">

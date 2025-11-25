@@ -16,14 +16,30 @@ const knowMoreLinks = [
 ];
 
 const legalLinks = [
-  { name: "Terms & Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
+  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Privacy Policy", href: "/privacy" },
 ];
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-blue-900 to-black text-white">
       {/* Stats Bar */}
+      <div className="bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {stats.map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center">
+                <p className="text-4xl font-bold text-yellow-400">
+                  {stat.value}
+                </p>
+                <p className="mt-1 text-blue-100 text-sm uppercase tracking-wider">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

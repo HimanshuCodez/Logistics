@@ -36,8 +36,8 @@ const CustomsClearanceSteps = lazy(() => import("../Components/Steps"));
 const Home = () => {
   return (
     <div className="w-full">
-      <Suspense fallback={<Spinner/>}>
-        <Navbar />
+      
+       
         <HeroSection />
         <AboutADLogistics />
         {/* <SeaAir />
@@ -45,28 +45,28 @@ const Home = () => {
         <Services />
         <WhyADLogistics />
         <WarehouseService />
+        <AboutUs />
         <CustomsClearanceSteps />
-        <LogisticsFolioLogisticsServices />
-        <CustomClearanceHighlights />
-        <FreightForwardingHighlightss />
-        <WhyADLogisticsConsultancy />
-        <CustomConsultancy />
+        {/* <LogisticsFolioLogisticsServices /> */}
         <EnquiryForm />
+        <CustomClearanceHighlights />
+      
         <WhyADLogisticsSurfaceTransportation />
-        <SurfaceTransportationHighlights />
+        {/* <WhyADLogisticsConsultancy /> */}
+        <Example />
+        <CustomConsultancy />
+   
         <MissionVisionValues />
         <ITCapabilities />
         <OurExperience />
         <CustomsImportDocs />
         <CustomsClearanceDocs />
-        <AboutUs />
-        <Example />
         <StatsShowcase />
         <ContactBanner />
         {/* <CustomerMarquee /> */}
         <Faq />
-        <Footer />
-      </Suspense>
+       
+   
     </div>
   );
 };
