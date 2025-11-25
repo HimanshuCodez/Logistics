@@ -193,11 +193,11 @@ export default function Navbar() {
               <div className="mt-3 px-5 space-y-2">
                 <a href="mailto:sales1@stargroup.in" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
                   <Mail className="w-4 h-4" />
-                  sales1@stargroup.in
+                  sales@adlogistics.co.in
                 </a>
                 <a href="tel:+919892575304" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
                   <Phone className="w-4 h-4" />
-                  +91-9892575304
+                    +91-9930213444
                 </a>
               </div>
             </div>
