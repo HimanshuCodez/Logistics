@@ -46,7 +46,7 @@ const Home = () => {
         <WhyADLogistics />
         <WarehouseService />
         <AboutUs />
-        <CustomsClearanceSteps />
+       
         {/* <LogisticsFolioLogisticsServices /> */}
         <EnquiryForm />
         <CustomClearanceHighlights />
@@ -59,8 +59,7 @@ const Home = () => {
         <MissionVisionValues />
         <ITCapabilities />
         <OurExperience />
-        <CustomsImportDocs />
-        <CustomsClearanceDocs />
+        
         <StatsShowcase />
         <ContactBanner />
         {/* <CustomerMarquee /> */}
