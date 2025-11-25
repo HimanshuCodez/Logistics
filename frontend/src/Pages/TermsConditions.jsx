@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Terms = () => {
+export  default function  TermsConditions() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -175,4 +175,4 @@ const Terms = () => {
   );
 };
 
-export default Terms;
+

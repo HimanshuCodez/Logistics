@@ -9,7 +9,9 @@ import Privacy from './Pages/Privacy';
 
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Terms from "./Pages/Terms";
+import TermsConditions from "./Pages/TermsConditions";
+
+
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact"element={<Contact />} />
         <Route path="/our-services" element={<OurServicesPage />} />
-        <Route path="/terms" element={<Terms />} />
+        <Route path="/terms" element={<TermsConditions />} />
+        
+     
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer/>
