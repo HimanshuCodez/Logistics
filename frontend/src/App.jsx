@@ -9,7 +9,7 @@ import Privacy from './Pages/Privacy';
 
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Terms from "./Pages/terms";
+import Terms from "./Pages/Terms";
 
 function App() {
   return (
