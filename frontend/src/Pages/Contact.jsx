@@ -59,7 +59,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <p>
                   <span className="font-medium text-blue-700">Address :</span>{" "}
-                  Office number 412 A wings Citi tower sector 15 CBD Belapur Navi Mumbai Maharashtra 400614
+                  Office number 412 A wings Citi tower sector 15 CBD Belapur Navi Mumbai Maharashtra :- 400614
                 </p>
                
               </div>
