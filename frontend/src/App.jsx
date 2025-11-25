@@ -6,9 +6,10 @@ import Contact from "./Pages/Contact";
 import OurServicesPage from './Components/OurServicesPage';
 
 import Privacy from './Pages/Privacy';
-import Terms from "./Pages/terms";
+
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Terms from "./Pages/terms";
 
 function App() {
   return (
