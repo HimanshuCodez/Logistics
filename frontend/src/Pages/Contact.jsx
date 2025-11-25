@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 const ContactUs = () => {
   return (
     <>
-    <Navbar/>
+ 
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center px-4 sm:px-6 py-12">
       {/* Header */}
       <motion.h1
