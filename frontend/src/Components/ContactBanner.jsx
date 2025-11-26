@@ -8,9 +8,7 @@ export default function ContactBanner() {
         {/* Top Row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
           <div className="flex flex-col items-center">
-            <div className="bg-white text-red-600 font-bold rounded-lg px-4 py-2 text-sm">
-              CALL <br /> 24x7
-            </div>
+            
           </div>
 
           {/* Bouncing Number */}

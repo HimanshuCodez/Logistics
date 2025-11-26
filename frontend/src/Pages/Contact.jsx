@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
-import Navbar from "../Components/Navbar";
-
+import Navbar from "../Components/Navbar"; 
 const ContactUs = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = `Contact Form Submission from ${fullName}`;
+    const body = `
+      Name: ${fullName}
+      Email: ${email}
+      Message: ${message}
+    `;
+
+    const mailtoLink = `mailto:info@adlogistics.co.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <>
  
@@ -76,7 +93,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right Side - Form */}
-        <form className="space-y-5">
+        <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
             <label className="block text-sm font-medium text-gray-700">
               Full Name
@@ -85,6 +102,8 @@ const ContactUs = () => {
               type="text"
               placeholder="Enter your name"
               className="w-full px-4 py-3 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1 text-sm sm:text-base"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
             />
           </div>
 
@@ -96,6 +115,8 @@ const ContactUs = () => {
               type="email"
               placeholder="Enter your email"
               className="w-full px-4 py-3 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-500 mt-1 text-sm sm:text-base"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -107,6 +128,8 @@ const ContactUs = () => {
               rows="4"
               placeholder="Write your message..."
               className="w-full px-4 py-3 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1 text-sm sm:text-base resize-none"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
 
@@ -135,5 +158,4 @@ const ContactUs = () => {
     </>
   );
 };
-
-export default ContactUs;
+ export default ContactUs; 

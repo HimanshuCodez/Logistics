@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -45,17 +46,10 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.07 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-400 hover:bg-blue-500 text-blue-900 font-semibold px-8 py-4 rounded-xl text-lg shadow-lg hover:shadow-blue-400/50 transition-all"
-              >
-                Get a Quote
+              ><Link to="/contact">Get a Quote</Link>
               </motion.button>
 
-              <motion.button
-                whileHover={{ scale: 1.07 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-blue-900 font-semibold px-8 py-4 rounded-xl text-lg transition-all"
-              >
-                Track Shipment
-              </motion.button>
+             
             </div>
           </motion.div>
 

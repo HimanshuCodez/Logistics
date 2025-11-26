@@ -9,10 +9,10 @@ const stats = [
 ];
 
 const knowMoreLinks = [
-  { name: "Blog", href: "#" },
+  
+  { name: "Home", href: "/" },
   { name: "About", href: "#" },
-  { name: "Contact Us", href: "#" },
-  { name: "Resources", href: "#" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const legalLinks = [
@@ -46,25 +46,10 @@ const Footer = () => {
           {/* Newsletter & Locations */}
           <div className="col-span-1 space-y-8">
             <div>
-              <h3 className="text-lg font-semibold">
-                Subscribe to Our Newsletter
-              </h3>
-              <p className="text-blue-300 mt-1 text-sm">
-                Get the latest logistics news & updates in your inbox.
+              <img src="/Logo.jpg" alt="AD Logistics Logo" className="h-24 w-auto mx-auto" />
+              <p className="text-blue-300 mt-4 text-sm text-center">
+                Delivering trusted logistics, freight forwarding, and customs clearance services since 2011. We move goods with precision, reliability, and speed — anywhere, anytime.
               </p>
-              <form className="mt-4 flex">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full px-4 py-2 rounded-l-md text-gray-800"
-                />
-                <button
-                  type="submit"
-                  className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-r-md font-semibold"
-                >
-                  Subscribe
-                </button>
-              </form>
             </div>
             <div className="grid grid-cols-1 gap-4 text-sm">
               <div>
@@ -149,6 +134,11 @@ const Footer = () => {
             </ul>
             {/* Social media icons can go here */}
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 border-t border-blue-800 pt-8 text-center text-sm text-blue-300">
+          <p>© 2011–2025 AD Logistics Clearance Pvt. Ltd. | All Rights Reserved</p>
         </div>
 
         {/* Disclaimer */}
