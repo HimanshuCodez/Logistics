@@ -45,12 +45,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Newsletter & Locations */}
           <div className="col-span-1 space-y-8">
-            <div>
-              <img src="/Logo.jpg" alt="AD Logistics Logo" className="h-24 w-auto mx-auto" />
-              <p className="text-blue-300 mt-4 text-sm text-center">
-                Delivering trusted logistics, freight forwarding, and customs clearance services since 2011. We move goods with precision, reliability, and speed — anywhere, anytime.
-              </p>
-            </div>
+           <div className="col-span-1">
+  <div className="flex items-center gap-4">
+    <img
+      src="/Logo.jpg"
+      alt="AD Logistics Logo"
+      className="h-24 w-auto"
+    />
+
+    <p className="text-blue-300 text-sm">
+      Delivering trusted logistics, freight forwarding, and customs clearance services since 2011.
+      We move goods with precision, reliability, and speed — anywhere, anytime.
+    </p>
+  </div>
+</div>
+
             <div className="grid grid-cols-1 gap-4 text-sm">
               <div>
                 <h4 className="font-semibold mb-2">Our Office</h4>

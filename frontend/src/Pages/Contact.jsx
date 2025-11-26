@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import Navbar from "../Components/Navbar"; 
+import MaharashtraMap from "../Components/Map";
 const ContactUs = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -154,6 +155,7 @@ const ContactUs = () => {
       >
         © {new Date().getFullYear()} A.D. Logistics — All Rights Reserved
       </motion.p>
+      <MaharashtraMap/>
     </div>
     </>
   );
