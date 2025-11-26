@@ -103,7 +103,7 @@ export default function Navbar() {
             {/* Right: Buttons */}
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
-                <a href="mailto:sales1@stargroup.in" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
+                <a href="mailto:sales@adlogistics.co.in" className="ml-3 flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700">
                   <Mail className="w-4 h-4" />
                   sales@adlogistics.co.in
                 </a>
@@ -191,11 +191,11 @@ export default function Navbar() {
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="mt-3 px-5 space-y-2">
-                <a href="mailto:sales1@stargroup.in" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
+                <a href="mailto:sales@adlogistics.co.in" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
                   <Mail className="w-4 h-4" />
                   sales@adlogistics.co.in
                 </a>
-                <a href="tel:+919892575304" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
+                <a href="tel:+919930213444" className="w-full flex items-center justify-center gap-2 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700">
                   <Phone className="w-4 h-4" />
                     +91-9930213444
                 </a>

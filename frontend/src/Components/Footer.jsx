@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { label: "Shipments Delivered", value: "50,000+" },
@@ -10,14 +11,14 @@ const stats = [
 
 const knowMoreLinks = [
   
-  { name: "Home", href: "/" },
-  { name: "About", href: "#" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Home", Link: "/" },
+  { name: "About", Link: "#" },
+  { name: "Contact Us", Link: "/contact" },
 ];
 
 const legalLinks = [
-  { name: "Terms & Conditions", href: "/terms" },
-  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms & Conditions", Link: "/terms" },
+  { name: "Privacy Policy", Link: "/privacy" },
 ];
 
 const Footer = () => {
@@ -115,12 +116,12 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-sm">
               {knowMoreLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.Link}
                     className="text-blue-300 hover:text-yellow-400"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -132,12 +133,12 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-sm">
               {legalLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.Link}
                     className="text-blue-300 hover:text-yellow-400"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
