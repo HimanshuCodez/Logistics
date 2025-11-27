@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export  default function  TermsConditions() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
